@@ -1,0 +1,134 @@
+gestion de compte
+gestion des titres
+contrat d'assurance
+suivre & effectuer un virement ponctuel/ premanent/international
+gestion des bénificiares
+
+Fonctionnalités Uptome:
+	messagerie sécurisé
+	vision partage
+	signature électronique
+
+	
+Micro service:
+Service d'une application SOA (Service Oriented Architecture). Application décomposé sur des différents petites services
+- faciliter dle developpement et le test de l'application
+- possibilité de parralléliser le developpement: equipe par micro-service
+- equipe indépendante par mocrp servoce développement dépoloiement et test indépendamment des autres services
+- Services in a microservice architecture should be independently deployable
+- The services are easy to replace.
+- Services are organized around capabilities, e.g., user interface front-end, recommendation, logistics, billing, etc.
+- Services can be implemented using different programming languages, databases, hardware and software environment, depending on what fits best.
+- Services are small in size, messaging enabled, bounded by contexts, autonomously developed, independently deployable, decentralized and built and released with automated processes
+- A change to a small part of the application only requires one or a small number of services to be rebuilt and redeployed
+
+
+Selenium: a web browser automation framework
+
+Load balancing (répartition des charges):
+- optimiser l'utilisation des ressources
+- réduire le temps de réponse
+- éviter la surcharge des ressources
+
+- augmenter la fiabilité et la disponibilité
+
+
+Continious delivery (Livraison contenu)
+Automated Builds: Generate artifacts from source following directives. Example tools are : Make, Rake (Ruby make), MS Build, Maven, Gradle
+Unit Tests : Junit
+Load Tests : Jmeter, Gatling
+Acceptance Tests : Behat, Cucumber, Selenium
+Automated Release: Artifact Repository (Nexus, Artifactory, Gitlab…)
+Automated Deployment: AWS Cloud Formation, Azure Resource Template, Google Cloud Deployment Manager
+Application Provisioning :Docker, Capistrano, Fabric
+Orchestration: GitlabCI, TravisCI, Jenkins
+
+- unti test: test développé pour tester une fonctionnalité précise dans l'appli
+- intergration test: test de bout en bout pour tester toute l'application
+
+Entrepôt d'artifact: Nexus
+
+TDD
+
+
+Devops key principals
+continuous delivery process to build, deploy applications.
+Ensures apps have automated functional tests that are used by the continuous delivery process to determine successful deployment and operation of applications.
+Ensures monitoring of applications is configured and have rules / alerts for routine and exceptional application conditions.
+
+creating the “pipeline” for packaging up, verifying, and then deploying software into production. That is, everything between writing code and operating it
+
+ DevOps can be defined by four key activities:
+- Collaborative Development
+- Continuous Integration and Continuous Testing
+- Continuous Release and Deployment
+- Continuous Monitoring
+
+The multiple layers of the DevOps Testing suite can be summarized as follows:
+- Unit Tests: These normally test individual classes or functions. These tests are the first to be run before any changes are committed to the code repository.
+- Integration Tests: This set of tests verify and validate that the modules comprising an application are compatible and work properly with each other.
+- System Tests: This test layer checks the entire system in an environment which is as close as possible to the real production environment.
+It should be noted that test automation forms only a part of Continuous Testing process in DevOps. It helps in augmenting software quality processes, ensures speed, quality and risk management.
+
+
+
+Apache CXF™ is an open source services framework. CXF helps you build and develop services using frontend programming APIs, like JAX-WS and JAX-RS. These services can speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA and work over a variety of transports such as HTTP, JMS or JBI.
+
+
+In Java, there are two types of exceptions – checked and unchecked exception:
+Checked – Extends java.lang.Exception, for recoverable condition, try-catch the exception explicitly, compile error.
+Unchecked – Extends java.lang.RuntimeException, for unrecoverable condition, like programming errors, no need try-catch, runtime error.
+
+Interfaces fonctionnelles: interface qui ne contient qu'une seule méthode abstraite. A utiliser avec les expression lambda
+Predicate<T>
+Represents a predicate (boolean-valued function) of one argument.
+Predicate<Integer> isAnAdult = age -> age >= 18;  
+
+Consumer<T>
+Represents an operation that accepts a single input argument and returns no result. Unlike most other functional interfaces, Consumer is expected to operate via side-effects.
+
+Supplier<T>
+Represents a supplier of results.
+
+Function<T,R>
+Represents a function that accepts one argument and produces a result.
+
+
+
+JDBC is a standard for Database Access
+JDBC is a standard for connecting to a DB directly and running SQL against it - e.g SELECT * FROM USERS, etc. Datasets can be returned which you can handle in your app, and you can do all the usual things like INSERTS, DELETES, run stored procedures, etc. It is one of the underlying technologies behind most java database access (including JPA providers).
+
+JPA is a standard for ORM
+JPA is a standard for Object Relational Mapping. This is a technology which allows you to map between objects in code and database tables. This can "hide" the SQL from the developer so that all they deal with are java classes, and the provider allows you to save them and load them magically. 
+
+
+JNDI (Java Naming and Directory Interface)
+JNDI really shines when you have to move an application between environments: development to integration to test to production. If you configure each app server to use the same JNDI name, you can have different databases in each environment and not have to change your code. You just pick up the WAR file and drop it in the new environment.
+
+
+
+	
+Micro service:
+Service d'une application SOA (Service Oriented Architecture). Application décomposé sur des différents petites services
+- faciliter dle developpement et le test de l'application
+- possibilité de parralléliser le developpement: equipe par micro-service
+- equipe indépendante par mocrp servoce développement dépoloiement et test indépendamment des autres services
+- Services in a microservice architecture should be independently deployable
+- The services are easy to replace.
+- Services are organized around capabilities, e.g., user interface front-end, recommendation, logistics, billing, etc.
+- Services can be implemented using different programming languages, databases, hardware and software environment, depending on what fits best.
+- Services are small in size, messaging enabled, bounded by contexts, autonomously developed, independently deployable, decentralized and built and released with automated processes
+- A change to a small part of the application only requires one or a small number of services to be rebuilt and redeployed
+
+
+
+
+Load balancing (répartition des charges):
+- optimiser l'utilisation des ressources
+- réduire le temps de réponse
+- éviter la surcharge des ressources
+
+- augmenter la fiabilité et la disponibilité
+
+
+Continious delivery (Livraison contenu)
