@@ -1,0 +1,75 @@
+- taux de couverture des tests plugin: http://www.eclemma.org/
+- Sonar appel au niveau de jenkins: goal maven mvn sonar ou mvn plugin ou appel à un webservice sonar depuis maven
+
+MAVEN
+- recherche dans le répo local sinon repo entreprise sinon répo centrale de maven
+- mvn gaols:
+validate - validate the project is correct and all necessary information is available
+compile - compile the source code of the project
+test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+package - take the compiled code and package it in its distributable format, such as a JAR.
+verify - run any checks on results of integration tests to ensure quality criteria are met
+install - install the package into the local repository, for use as a dependency in other projects locally
+deploy - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+-By default, Maven local repository is default to .m2 folder :
+Unix/Mac OS X – ~/.m2
+Windows – C:\Documents and Settings\{your-username}\.m2
+
+Redéfinition d'une méthode @Override
+Surcharge de méthode: même méthode avec nb ou type différents de pramtres
+
+TDD: Test driven development
+Red Green Refecto
+Si une méthode doit couvrir 3 tests unitaires A,B et C
+on écrit le premier test A
+on écrit la méthode avec un retour d'une exception pour garantir que le 1er test échoue (RED)
+On lance le test A ==> RED
+Pour passer au GREEN, on fait évoluer la méthode
+Relancer le test A ==> GREEN
+REFACTO du code pour optimiser la méthode
+Ecrire le test B et refaire la même cycle
+Ecrire le test C et refaire la même cycle
+
+Principe TDD: on n'écrit pas tous les tests unitaires à la fois, ca se fait au fur et à mesure de l'implémentation de la fonctionnalité
+Ceci nous permettra de se retrouver au final avec un code et un test unitaire qui couvre déjà tous les cas possibles
+
+BDD: Behavour driven development
+Test qui concerne le comportement de application
+Test écrit en langage proche du language humain comprénsible par les non dev (Gherkin)
+
+
+DEVOPS : DEVELOPERS OPERATION
+C'est un concept qui vise à rapprocher l'équipe developpement des exploitants (exploitants, infra, administrateur base de données..)
+
+EQUALS redéfinition
+La redéfintion de la fonction equals exige la redéfinition de la fonction hashCode
+La fonction hashCode et utilisé par exemple dans la gestion des sets. Un set ne contient pas de duplication. En invoquant la méthode add à un set, le système vérifie d'abord s'il y a un élément avec le même hascode sinon il passer à comparer avec la fonction equal. Ceci ne marche pas correctement si on ne respecte pas la règle (redéfinition de hascode suite à la redéfinition de equals)
+
+COLLECTION vs LIST vs SET vs MAP
+Collection: The root interface in the collection hierarchy. A collection represents a group of objects, known as its elements. Some collections allow duplicate elements and others do not. Some are ordered and others unordered.
+
+List: An ordered collection (also known as a sequence). The user of this interface has precise control over where in the list each element is inserted. The user can access elements by their integer index (position in the list), and search for elements in the list.
+
+Set: A collection that contains no duplicate elements. More formally, sets contain no pair of elements e1 and e2 such that e1.equals(e2), and at most one null element. As implied by its name, this interface models the mathematical set abstraction.
+
+Map: An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
+
+COMMANDES LINUX
+grep ^error filename : retoune tous les lignes qui commmencent par error dans un fichier
+grep ^[a-zA-Z] filename: retourne tous les lignes qui commencent par une lettre
+less file_name: utile dans le cas où on gère un gros fichier, elle permet d'afficher une partie de fichier sans ouvrir tout le ficher et le charger en mémoire
+
+
+SVN: centralisé (commit sur un seul répo)
+
+GIT: décentralisé
+Repo local dans le dossier .git/ qui est sur le même répertoire du projet
+Push sur le répo distant
+Merge commit feature to develope
+develop contient commit A, B, C
+feature contient commit D,E et F
+le merge entre feature et develop va faire ca sur la branche develop: A, B, C, D, E, F, G (G c'est un commit intitulé merge entre feature et develop)
+
+IMMUTABLE
+Classe sans setters s'appelle classe immutable
