@@ -1,0 +1,30 @@
+Agile
+Estimation :
+-	Macro estimation à travers l’atelier magic estimation
+-	L’équipe s’engage sur une qualité de production
+-	Une estimation plus précise est faite au début de chaque sprint
+Story Map (User story map):
+-	Découpage fonctionnelle en releases
+-	Fonctionnalité = groupe de user stories (US)
+-	Réduire le cout de la recette : recetter des petites fonctionnalités livres au lieu de recetter un dev qui dure un an pendant 2 mois. Ca limite le cout de la recette et des corrections
+-	Bug remontés par la recette facile à corriger parce que l’équipe vient de les développer et ça touche un périmètre de fonctionnalité particulier
+-	Ça permet au client de gagner de l’argent le plus tôt possible en mettant ses premiers releases en prod
+-	Les user story doivent être découpé en petites user stories. L’objectif c’est que le US soit testable assez découpé pour rentrer dans le sprint.
+Sprint 0 :
+-	Consacré pour la mise en place de l’environnement, outil de monitoring, configuration 
+Story point :
+-	Unité de mesure plus précise/ empérique (qui s’appuie sur l’expérience et non pas la théorie)
+-	Permet de faire abstracation à la différence de compétences d’une équipe (rapidité de codage/test…)
+-	Capacité globale d’une équipe = Velocité. Elle est caculé en stroy point
+Timebox ou spike :
+-	Estimation d’une correction de bug : pas sûr de l’estimation => définir une duré limite si dépassé passer à autre chose ou revoir l’estimation
+Pocker planning  = Sprint planning :
+-	Permet de discuter les story => monté en compétence sur le fonctionnel
+Retrospectives :
+-	Réunion à la fin du sprint pour remonter les problèmes rencontré pendant le sprint (par exemple un daily qui dure plus que 15mn)
+-	S’améliorer au fur et mesure
+En scrum il y a  4 céromonies :
+-	Pocker planning
+-	Daily : <15mn, lever le blocage, synchronisation entre l’équipe
+-	Retrospectives : creuser les problèmes, trouver les solutions
+-	Demo : donner de la visibilité de l’avancement, récupérer feedback client
