@@ -1,0 +1,18 @@
+Java Interface Default Method
+Java Interface Static Method
+Java Functional Interfaces: Some of the useful java 8 functional interfaces are Consumer, Supplier, Function and Predicate.
+Lambda Expression:  Java language provide support for using lambda expressions only with functional interfaces.
+	Lambda Expressions syntax is (argument) -> (body). 
+	Runnable r1 = () -> System.out.println("My Runnable");
+	Runnable is a functional interface, that’s why we can use lambda expression to create it’s instance.
+	Since run() method takes no argument, our lambda expression also have no argument.
+	Just like if-else blocks, we can avoid curly braces ({}) since we have a single statement in the method body. For multiple statements, we would have to use curly braces like any other methods.
+Method and Constructor References
+	A method reference is used to refer to a method without invoking it; a constructor reference is similarly used to refer to a constructor without creating a new instance of the named class or array type.
+	System::getProperty
+	System.out::println
+	"abc"::length
+	ArrayList::new
+	int[]::new
+Java Stream
+	Java Stream operations use functional interfaces, that makes it a very good fit for functional programming using lambda expression. 
